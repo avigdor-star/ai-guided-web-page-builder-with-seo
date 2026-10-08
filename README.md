@@ -9,6 +9,7 @@ It asks a few plain-English questions, builds clean, search-friendly HTML, and w
 - Short interview about your brand, audience, goal, style, and search words (skippable)
 - Builds or edits SEO-ready pages: titles, descriptions, headings, alt text, sitemap, robots file
 - **Pictures made easy:** you hand over photos in any form; it resizes, renames, and cleans them, removes hidden location data, and keeps them inside the website folder. No separate image hosting.
+- **Front-end know-how built in:** a design-direction process that avoids generic template looks, phone-first rules, type, color, layout, accessibility, speed, and motion guides, ready-made parts (menu, gallery, FAQ, forms), a starter stylesheet, and a phone audit script that checks the rendered page
 - Clearly labeled placeholders for anything missing, plus a final check that none go live by accident
 - Optional step-by-step Netlify publishing, domain connection, and later updates, with safeguards for email and DNS
 
@@ -22,7 +23,12 @@ ai-guided-web-page-builder-with-seo/
     ├── SKILL.md                     ← the skill itself
     └── references/
         ├── IMAGES_GUIDE.md          ← pictures, step by step
-        └── NETLIFY_LAUNCH_GUIDE.md  ← going live on Netlify
+        ├── NETLIFY_LAUNCH_GUIDE.md  ← going live on Netlify
+        └── frontend/                ← front-end design and mobile reference
+            ├── 00_START_HERE.md     ← index and the rules that always apply
+            ├── 01 to 10 guides      ← design, type, color, layout, mobile, parts, a11y, speed, motion, testing
+            ├── SOURCES.md           ← credits and licenses
+            └── starter/             ← base.css and mobile-audit.js
 ```
 
 ## How to use it with any AI assistant
@@ -58,6 +64,10 @@ This is plain Markdown. It isn't tied to one company's AI. It works with any ass
 - Netlify's screens and wording change over time. The skill tells the assistant to follow what the user actually sees and to use the DNS values Netlify shows for their site.
 - The skill can prepare pages for search engines, but it never promises rankings, traffic, or indexing.
 - Privacy and cookie notices can be legally required. The skill flags this and drafts nothing as legal advice.
+
+## Credits
+
+The front-end section draws on ideas from two Apache-2.0 projects, Anthropic's `frontend-design` skill and Paul Bakaus's Impeccable, plus public web standards. Everything is rewritten in this skill's own words. Details and links are in [SOURCES.md](guided-page-builder/references/frontend/SOURCES.md).
 
 ## License
 
