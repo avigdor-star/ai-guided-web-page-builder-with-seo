@@ -1,4 +1,4 @@
-# Guided Page Builder
+# AI Guided Web Page Builder with SEO
 
 An AI skill that helps non-technical people build a web page or small website, handle their own photos and logos, and put it online for free on Netlify, with a domain they already own if they have one.
 
@@ -15,20 +15,21 @@ It asks a few plain-English questions, builds clean, search-friendly HTML, and w
 ## What's inside
 
 ```text
-guided-page-builder/
-├── SKILL.md                         ← the skill itself
+ai-guided-web-page-builder-with-seo/
 ├── README.md
 ├── LICENSE
-└── references/
-    ├── IMAGES_GUIDE.md              ← pictures, step by step
-    └── NETLIFY_LAUNCH_GUIDE.md      ← going live on Netlify
+└── guided-page-builder/             ← the skill folder (this is what you install)
+    ├── SKILL.md                     ← the skill itself
+    └── references/
+        ├── IMAGES_GUIDE.md          ← pictures, step by step
+        └── NETLIFY_LAUNCH_GUIDE.md  ← going live on Netlify
 ```
 
 ## Install
 
-**Claude Code:** copy the `guided-page-builder` folder into `~/.claude/skills/` (all projects) or `.claude/skills/` inside a project.
+**Claude Code:** download this repo, then copy the inner `guided-page-builder` folder (the one containing `SKILL.md`) into `~/.claude/skills/` (all projects) or `.claude/skills/` inside a project.
 
-**Claude app:** zip the `guided-page-builder` folder and upload it in the app's Skills settings.
+**Claude app:** zip the inner `guided-page-builder` folder (not the whole repo) and upload it in the app's Skills settings.
 
 **Other tools that support `SKILL.md` skills:** place the folder where that tool looks for skills.
 
