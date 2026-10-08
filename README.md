@@ -1,6 +1,6 @@
 # AI Guided Web Page Builder with SEO
 
-An AI skill that helps non-technical people build a web page or small website, handle their own photos and logos, and put it online for free on Netlify, with a domain they already own if they have one.
+An AI skill, written to work with any AI assistant, that helps non-technical people build a web page or small website, handle their own photos and logos, and put it online for free on Netlify, with a domain they already own if they have one.
 
 It asks a few plain-English questions, builds clean, search-friendly HTML, and walks the user through each step of going live. It never asks for passwords and doesn't publish anything without a clear yes.
 
@@ -25,13 +25,27 @@ ai-guided-web-page-builder-with-seo/
         └── NETLIFY_LAUNCH_GUIDE.md  ← going live on Netlify
 ```
 
-## Install
+## How to use it with any AI assistant
 
-**Claude Code:** download this repo, then copy the inner `guided-page-builder` folder (the one containing `SKILL.md`) into `~/.claude/skills/` (all projects) or `.claude/skills/` inside a project.
+This is plain Markdown. It isn't tied to one company's AI. It works with any assistant that can follow written instructions. It works best with one that can also create and edit files, because then it can build the site folder for you.
 
-**Claude app:** zip the inner `guided-page-builder` folder (not the whole repo) and upload it in the app's Skills settings.
+**The universal method (works anywhere):**
 
-**Other tools that support `SKILL.md` skills:** place the folder where that tool looks for skills.
+1. Start a new chat with your AI assistant.
+2. Give it `guided-page-builder/SKILL.md`: paste the text, or attach the file.
+3. Attach the two files in `guided-page-builder/references/`: `IMAGES_GUIDE.md` and `NETLIFY_LAUNCH_GUIDE.md`.
+4. Say: *"Follow the instructions in SKILL.md to help me build a web page."*
+
+**If your tool has a "skills", "custom instructions", or "rules" feature,** install it there instead, so it's always available:
+
+| Your tool | What to do |
+| --- | --- |
+| Tools that load `SKILL.md` skills from a folder (several coding assistants and desktop apps do) | Copy the inner `guided-page-builder` folder, the one containing `SKILL.md`, into that tool's skills folder. Check your tool's docs for where that is. |
+| Tools with an upload screen for skills | Zip the inner `guided-page-builder` folder (not the whole repo) and upload it. |
+| Custom chatbots, GPTs, Gems, or assistants with an instructions box | Put one line in the instructions: "Follow SKILL.md." Then upload `SKILL.md` and the two guides as knowledge files. Instruction boxes often have a length limit, and `SKILL.md` is long. |
+| Editors with project rules or agent files (such as `AGENTS.md`-style files) | Save `SKILL.md` into the rules location, or point the rules file to it. Keep the `references/` folder beside it. |
+
+**What the assistant needs:** nothing special. If it can't make files, it will give you the code and plain-English steps instead. If it can't browse the web, it will ask you to paste any example pages you want it to look at.
 
 ## Try it
 
